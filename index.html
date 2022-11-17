@@ -4,10 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js"></script>
     <title>ATM Machine</title>
 </head>
 <body>
-    
+    <div class="center-div">
+        <h1>ATM</h1>
+        <label id="errMsg">...</label>
+
+        <div id="login-portal">
+            <h3>Login</h3><br>
+            <label>Account number:</label><br>
+            <input type="text" id="lAccNo" class="textbox-style margin-button-12" required><br>
+            <label>Pin number:</label><br>
+            <input type="text" id="lAccPin" class="textbox-style margin-button-12" required><br>
+            <button id="login-btn" class="margin-button-12">Login</button><br>
+            <label id="swithToReg" class="switch">Don't have an account? Register</label>
+        </div><br>
+
+        <div id="register-portal">
+            <h3>Register</h3><br>
+            <label>Name:</label>
+            <input type="text" id="rAccName" class="textbox-style margin-button-12" required><br>
+            <label>Account no:</label>
+            <input type="text" id="rAccNo" class="textbox-style margin-button-12" required><br>
+            <label>Pin number:</label>
+            <input type="text" id="rAccPin" class="textbox-style margin-button-12" required><br>
+            <label>Confirm Pin number:</label>
+            <input type="text" id="rConAccPin" class="textbox-style margin-button-12" required><br>
+            <button id="register-btn" class="margin-button-12">Register</button>
+            <label id="swithToLogin" class="switch">Don't have an account? Login</label>
+        </div><br>
+
+        <div id="portal">
+            <h3 id="userName">...</h3>
+            <h3 id="totalBal">...</h3>
+
+            <div id="deposit-portal">
+                <h4>Deposit</h4>
+                <label>Enter Amount:</label><br>
+                <input type="text" id="deposit-atm" class="textbox-style margin-button-12" required><br>
+                <button id="dep-submit">Deposit</button>
+            </div><br>
+
+            <div id="withdraw-portal">
+                <h4>Withdraw</h4>
+                <label>Enter Amount:</label><br>
+                <input type="text" id="withdraw-atm" class="textbox-style margin-button-12" required><br>
+                <button id="wit-submit">Withdraw</button>
+            </div><br>
+
+            <div id="transfer-portal">
+                <h4>Transfer</h4>
+                <label>Enter Amount:</label><br>
+                <input type="text" id="transfer-atm" class="textbox-style margin-button-12" required><br>
+                <label>Enter transfer Account number:</label><br>
+                <input type="text" id="transfer-acc-no" class="textbox-style margin-button-12" required><br>
+                <button id="trans-submit">Transfer</button>
+            </div><br>
+
+            <div id="options">
+                <h3>Please select an option</h3>
+                <button id="deposit-btn">Deposit</button>
+                <button id="withdraw-btn">Withdraw</button>
+                <button id="transfer-btn">Transfer</button>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
