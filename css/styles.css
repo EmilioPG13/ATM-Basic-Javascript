@@ -45,7 +45,7 @@ switch:hover {
     color: #4ECDC4;
 }
 
-#register-portal, #portal {
+#register-portal, #portal, #deposit-portal, #withdraw-portal, #transfer-portal {
     display: none;
 }
 h3,h4{

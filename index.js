@@ -30,6 +30,7 @@ function switchToReg() {
             let lAccPin = document.getElementById('lAccPin').value
             if(lAccNo.match(AccNoPat) && lAccPin.match(accPinPat)){
                 alert("welcome")
+                portal(lAccNo,lAccPin)
             } else {
                 document.getElementById('errMsg').innerHTML = 'Enter a valid account or pin'
             }
@@ -47,4 +48,13 @@ function switchToReg() {
         alert("Please enter valid details")
         }
     }
+}
+
+//Portal
+function portal(accNo, accPin){
+    document.getElementById('login-portal').style = 'display:none'
+    document.getElementById('register-portal').style = 'display:none'
+    document.getElementById('portal').style = 'display:inline-block'
+
+    let name, avalBal, totalBal, recievedAmt
 }
